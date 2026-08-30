@@ -1,0 +1,473 @@
+  Guia Educativo sobre Inteligência Artificial: conceitos, aplicações, riscos e
+                    uso consciente na sociedade digital
+
+
+
+INTRODUÇÃO
+
+        A Inteligência Artificial (IA) representa uma das principais transformações
+tecnológicas do século XXI, estando presente em diferentes setores da sociedade,
+como educação, saúde, segurança, comércio, indústria e entretenimento. Seu avanço
+tem proporcionado ganhos significativos em produtividade, automação de processos
+e apoio à tomada de decisões, modificando profundamente a forma como pessoas e
+organizações interagem com a informação. Paralelamente aos benefícios
+proporcionados por essas tecnologias, surgem desafios relacionados à privacidade
+dos dados, disseminação de informações falsas, vieses algorítmicos, segurança
+digital e utilização ética dos sistemas inteligentes.
+
+        Nesse contexto, torna-se fundamental promover ações educativas que
+possibilitem à população compreender o funcionamento básico da Inteligência
+Artificial, seus benefícios, limitações e riscos. O letramento digital constitui um
+instrumento indispensável para que os cidadãos desenvolvam pensamento crítico
+diante das novas tecnologias, utilizando-as de forma consciente, responsável e
+segura.
+
+       Dessa forma, esta atividade extensionista tem como objetivo desenvolver
+materiais digitais educativos destinados à conscientização da comunidade sobre o
+uso ético e seguro da Inteligência Artificial, integrando conhecimentos adquiridos no
+curso de Engenharia de Software com ações de impacto social.
+
+1 CONCEITOS
+
+1.1 O que é Inteligência Artificial?
+
+        A Inteligência Artificial (IA) é um ramo da Ciência da Computação dedicado ao
+desenvolvimento de sistemas capazes de executar tarefas que normalmente
+exigiriam inteligência humana. Essas tarefas incluem reconhecer padrões, interpretar
+imagens, compreender e produzir linguagem natural, aprender com experiências,
+tomar decisões e resolver problemas complexos. Em outras palavras, a IA busca criar
+máquinas e programas capazes de simular determinadas capacidades cognitivas
+humanas por meio de algoritmos, modelos matemáticos e processamento de grandes
+volumes de dados.
+
+       Embora muitas pessoas associem a Inteligência Artificial apenas a robôs ou
+assistentes virtuais, sua aplicação vai muito além. Atualmente, ela está presente em
+mecanismos de busca, redes sociais, plataformas de streaming, sistemas bancários,
+aplicativos de navegação, diagnósticos médicos, comércio eletrônico, veículos
+autônomos e diversas outras tecnologias utilizadas diariamente.
+
+       Diferentemente da programação tradicional, em que todas as regras são
+previamente definidas pelo programador, muitos sistemas de Inteligência Artificial
+utilizam técnicas que lhes permitem identificar padrões e melhorar seu desempenho
+conforme analisam novos dados. Essa capacidade de adaptação torna a IA uma das
+áreas mais promissoras da Engenharia de Software e da Computação.
+
+
+    Você sabia?
+
+ A Inteligência Artificial já faz parte do seu dia a dia, mesmo que você não perceba.
+ Sempre que o Spotify recomenda uma música ou o Google Maps sugere uma rota
+ mais rápida, algoritmos de IA estão analisando dados para oferecer uma
+ experiência personalizada.
+
+
+
+
+    Exemplo do cotidiano
+
+ Quando você pesquisa um produto na internet e, pouco depois, começa a receber
+ anúncios semelhantes nas redes sociais, há sistemas de IA analisando seu
+ comportamento para personalizar essas recomendações.
+
+
+
+
+1.2 Breve histórico da Inteligência Artificial
+
+       Embora os avanços mais conhecidos tenham ocorrido nas últimas décadas, a
+ideia de desenvolver máquinas inteligentes é antiga. Em 1950, o matemático britânico
+Alan Turing publicou o artigo Computing Machinery and Intelligence, no qual propôs
+uma reflexão sobre a possibilidade de uma máquina pensar. Nesse trabalho,
+apresentou o famoso Teste de Turing, utilizado para avaliar se um sistema é capaz
+de apresentar um comportamento inteligente semelhante ao humano.
+
+      O termo Inteligência Artificial foi oficialmente criado em 1956 durante a
+Conferência de Dartmouth, organizada por John McCarthy, Marvin Minsky, Claude
+Shannon e Nathaniel Rochester. Esse evento é considerado o marco inicial da IA
+como área científica.
+
+      Nas décadas seguintes, ocorreram períodos de grande entusiasmo e também
+de redução nos investimentos, conhecidos como "invernos da IA". Entretanto, o
+aumento da capacidade computacional, a popularização da internet e a
+disponibilidade de grandes conjuntos de dados impulsionaram novamente a área.
+Atualmente, ferramentas de IA Generativa, como ChatGPT, Gemini e Copilot,
+tornaram essa tecnologia amplamente acessível à população.
+
+
+     Linha do tempo
+
+ 1950
+
+ ➡ Alan Turing propõe o Teste de Turing
+
+ ↓
+
+ 1956
+
+ ➡ Conferência de Dartmouth cria o termo Inteligência Artificial
+
+ ↓
+
+ 1997
+
+ ➡ Deep Blue vence Garry Kasparov
+
+ ↓
+
+ 2011
+
+ ➡ IBM Watson vence o Jeopardy!
+
+ ↓
+
+ 2022
+
+ ➡ Popularização da IA Generativa
+
+ ↓
+
+ Hoje
+
+ ➡ IA presente no cotidiano
+
+
+
+
+1.3 Principais áreas da Inteligência Artificial
+
+      A Inteligência Artificial engloba diversas subáreas, cada uma voltada para
+resolver diferentes tipos de problemas computacionais. Entre as principais destacam-
+se:
+   •   Machine Learning (Aprendizado de Máquina): permite que computadores
+       aprendam padrões a partir de dados sem necessidade de programação
+       específica para cada situação.
+
+          Na prática: Quando o YouTube recomenda vídeos parecidos com
+       aqueles que você costuma assistir, ele utiliza técnicas de Machine Learning.
+
+
+   •   Deep Learning (Aprendizado Profundo): utiliza redes neurais artificiais
+       compostas por múltiplas camadas para resolver problemas complexos, como
+       reconhecimento facial e interpretação de linguagem.
+
+          Você sabia? O reconhecimento facial utilizado para desbloquear
+       smartphones utiliza redes neurais profundas.
+
+   •   Processamento de Linguagem Natural (PLN): permite que computadores
+       compreendam, interpretem e produzam textos e falas em linguagem humana.
+   •   Visão Computacional: possibilita que sistemas interpretem imagens e vídeos,
+       sendo utilizada em reconhecimento facial, exames médicos e veículos
+       autônomos.
+   •   IA Generativa: desenvolve conteúdos inéditos, como textos, imagens,
+       músicas, vídeos e códigos de programação, a partir de comandos fornecidos
+       pelo usuário.
+
+       ⚠ Importante: Uma IA Generativa pode criar textos muito convincentes, mas
+       isso não significa que todas as informações produzidas sejam verdadeiras.
+
+
+
+2 FUNCIONAMENTO BÁSICO
+
+2.1 Como a Inteligência Artificial aprende?
+
+        O funcionamento da Inteligência Artificial baseia-se na combinação de
+algoritmos, modelos matemáticos e grandes quantidades de dados. Durante o
+processo de treinamento, o sistema analisa milhares ou milhões de exemplos para
+identificar padrões e relações entre as informações.
+
+      Por exemplo, para que uma IA aprenda a reconhecer gatos em fotografias, ela
+precisa analisar milhares de imagens contendo gatos e também imagens sem gatos.
+Após diversas etapas de treinamento, o sistema consegue identificar características
+comuns, como formato das orelhas, olhos, pelos e contornos do corpo, tornando-se
+capaz de classificar novas imagens com elevado grau de precisão.
+      Quanto maior a qualidade e a diversidade dos dados utilizados no treinamento,
+maior tende a ser a capacidade da IA de realizar previsões e tomar decisões
+adequadas.
+
+
+    Como uma IA aprende?
+
+ Imagine ensinar uma criança a reconhecer um cachorro.
+
+ Você mostra centenas de fotos.
+
+ Depois milhares.
+
+ A criança começa a perceber padrões.
+
+ A IA faz algo parecido: analisa milhares ou milhões de exemplos até aprender quais
+ características identificar.
+
+
+
+
+    Curiosidade
+
+ Ao contrário do que muitos imaginam, a IA não "pensa" nem possui consciência.
+ Ela realiza cálculos matemáticos extremamente complexos para identificar padrões
+ e gerar respostas com base nos dados utilizados durante seu treinamento.
+
+
+
+
+2.2 Dados e algoritmos
+
+        Os dados representam a principal fonte de aprendizagem da Inteligência
+Artificial. Informações provenientes de textos, imagens, vídeos, sensores e bancos de
+dados são utilizadas para ensinar os modelos computacionais.
+
+        Já os algoritmos correspondem às instruções matemáticas responsáveis por
+processar essas informações, identificar padrões e produzir resultados. Em conjunto,
+dados e algoritmos permitem que os sistemas desenvolvam comportamentos
+inteligentes para diferentes aplicações.
+
+2.3 O que são Redes Neurais Artificiais?
+
+       As Redes Neurais Artificiais são modelos computacionais inspirados no
+funcionamento dos neurônios do cérebro humano. Elas são formadas por diversas
+camadas de processamento que recebem informações, realizam cálculos
+matemáticos e produzem respostas.
+      Essas redes constituem a base das tecnologias modernas de Deep Learning,
+sendo amplamente utilizadas em reconhecimento de voz, tradução automática,
+geração de imagens, veículos autônomos e sistemas de recomendação.
+
+2.4 IA Generativa
+
+        A IA Generativa representa uma das evoluções mais recentes da Inteligência
+Artificial. Diferentemente dos sistemas tradicionais, que apenas classificam ou
+analisam dados, esses modelos conseguem criar conteúdos novos. Entre suas
+aplicações estão:
+
+       •   produção de textos;
+       •   criação de imagens;
+       •   geração de músicas;
+       •   desenvolvimento de códigos de programação;
+       •   criação de vídeos;
+       •   tradução automática;
+       •   auxílio à pesquisa e ao aprendizado.
+
+        Apesar do enorme potencial, esses sistemas podem produzir informações
+incorretas, fenômeno conhecido como alucinação da IA reforçando a importância da
+verificação humana das respostas geradas.
+
+
+
+3 APLICAÇÕES REAIS
+
+      A Inteligência Artificial está presente em praticamente todos os setores da
+sociedade contemporânea, promovendo inovação, aumento da produtividade e
+melhoria na tomada de decisões.
+
+   •   Na área da saúde, auxilia médicos na análise de exames, identificação
+       precoce de doenças, desenvolvimento de medicamentos e monitoramento de
+       pacientes.
+   •   Na educação, plataformas inteligentes personalizam o ensino, oferecem
+       correções automáticas, traduzem conteúdos e auxiliam estudantes durante o
+       processo de aprendizagem.
+   •   No comércio eletrônico, recomenda produtos de acordo com o perfil dos
+       consumidores, melhora o atendimento por meio de chatbots e contribui para
+       estratégias de marketing personalizadas.
+   •   Na indústria, otimiza processos produtivos, realiza manutenção preditiva,
+       controla qualidade e reduz desperdícios.
+   •   Na segurança pública, auxilia na identificação de fraudes, monitoramento de
+       ambientes e análise de grandes volumes de dados.
+   •   No setor financeiro, detecta movimentações suspeitas, combate fraudes
+       bancárias, realiza análise de crédito e automatiza atendimentos.
+   •   Na Engenharia de Software, apoia o desenvolvimento de sistemas, gera
+       códigos, identifica vulnerabilidades, realiza testes automatizados e auxilia na
+       documentação de projetos.
+
+       Além disso, ferramentas de IA já fazem parte do cotidiano da população por
+meio de assistentes virtuais, tradutores automáticos, aplicativos de navegação,
+plataformas de streaming e redes sociais.
+
+
+
+4 RISCOS
+
+        Apesar dos inúmeros benefícios, a utilização da Inteligência Artificial também
+apresenta desafios que exigem atenção da sociedade. Um dos principais riscos é a
+disseminação de fake news, já que ferramentas de IA conseguem produzir textos,
+imagens e vídeos extremamente realistas, dificultando a identificação de conteúdos
+falsos.     Exemplo: Uma imagem criada por IA mostrando um político em uma
+situação que nunca aconteceu pode ser compartilhada milhares de vezes antes que
+alguém descubra que é falsa.
+
+      Outro problema relevante é a criação de deepfakes, vídeos ou áudios
+manipulados digitalmente que simulam pessoas reais dizendo ou fazendo algo que
+nunca aconteceu. Essas tecnologias podem ser utilizadas para fraudes, golpes,
+desinformação e danos à reputação.          Exemplo: Vídeos manipulados podem
+reproduzir perfeitamente a voz e o rosto de uma pessoa, simulando falas que nunca
+ocorreram.
+
+      Também merece destaque o uso indevido de dados pessoais. Muitos
+sistemas dependem da coleta de informações dos usuários para seu funcionamento.
+Quando essa coleta ocorre sem transparência ou sem os devidos mecanismos de
+proteção, há risco de violação da privacidade e descumprimento da Lei Geral de
+Proteção de Dados (LGPD).
+
+          Atenção
+
+       Nunca envie:
+
+          CPF
+
+          Senhas
+
+          Dados bancários
+          Prontuários médicos
+
+          Contratos sigilosos
+
+      para ferramentas de IA sem conhecer a política de privacidade da plataforma.
+
+      Outro desafio refere-se aos vieses algorítmicos. Como os modelos aprendem
+com dados históricos, eles podem reproduzir preconceitos existentes nesses dados,
+gerando decisões injustas ou discriminatórias.
+
+       Há ainda preocupações relacionadas à dependência excessiva dessas
+tecnologias, à substituição de determinadas atividades profissionais pela automação
+e à utilização inadequada da IA em ambientes acadêmicos, como a produção de
+trabalhos sem aprendizado efetivo.
+
+        Por esses motivos, especialistas defendem que a Inteligência Artificial seja
+utilizada como ferramenta de apoio às atividades humanas, e não como substituta do
+pensamento crítico e da responsabilidade individual.
+
+
+
+5 ASPECTOS ÉTICOS
+
+        O avanço da Inteligência Artificial tornou imprescindível a discussão sobre
+princípios éticos capazes de orientar seu desenvolvimento e utilização. Entre os
+principais princípios está a transparência, segundo a qual usuários devem
+compreender quando estão interagindo com sistemas de IA e conhecer, sempre que
+possível, os critérios utilizados para produzir determinados resultados. Pergunta para
+refletir...Você consegue identificar quando um conteúdo foi produzido por Inteligência
+Artificial?
+
+       Outro aspecto fundamental é a responsabilidade, que estabelece que
+empresas, desenvolvedores e organizações continuam responsáveis pelas decisões
+tomadas com apoio da Inteligência Artificial, não podendo atribuir integralmente à
+tecnologia eventuais erros ou prejuízos. Mesmo utilizando IA, a decisão final continua
+sendo responsabilidade das pessoas.
+
+       A privacidade também ocupa posição central. Os sistemas devem respeitar a
+legislação vigente, proteger informações pessoais e garantir que os dados dos
+usuários sejam tratados de forma segura, transparente e consentida. Outro princípio
+importante é a equidade, buscando minimizar vieses discriminatórios relacionados a
+gênero, raça, idade, deficiência, condição socioeconômica ou qualquer outra
+característica pessoal. Os algoritmos precisam ser constantemente avaliados para
+evitar preconceitos e discriminações.
+      No contexto acadêmico, o uso ético da IA exige que estudantes utilizem essas
+ferramentas como apoio ao aprendizado, preservando a autoria intelectual, realizando
+a verificação das informações geradas e evitando práticas como plágio ou
+dependência excessiva dos sistemas automatizados.
+
+      Por fim, é essencial compreender que a Inteligência Artificial não substitui o
+julgamento humano. Seu maior potencial está em ampliar as capacidades das
+pessoas, contribuindo para decisões mais informadas e processos mais eficientes,
+desde que utilizada de maneira consciente, crítica e responsável.
+
+
+
+
+6 BOAS PRÁTICAS PARA O USO CONSCIENTE E SEGURO DA INTELIGÊNCIA
+ARTIFICIAL
+
+       A crescente presença da Inteligência Artificial no cotidiano exige que seus
+usuários adotem práticas responsáveis para garantir a segurança, a privacidade e a
+confiabilidade das informações. Embora essas tecnologias ofereçam inúmeras
+possibilidades para facilitar tarefas, otimizar processos e ampliar o acesso ao
+conhecimento, seu uso inadequado pode ocasionar problemas como a disseminação
+de desinformação, a exposição de dados pessoais e a tomada de decisões baseadas
+em informações incorretas.
+
+      Nesse contexto, desenvolver o letramento digital torna-se essencial para que
+a população utilize essas ferramentas de maneira crítica e consciente. O usuário deve
+compreender que a Inteligência Artificial é uma ferramenta de apoio às atividades
+humanas, não devendo substituir o pensamento crítico, a análise das informações ou
+a responsabilidade individual.
+
+        Entre as principais recomendações para um uso seguro e ético da Inteligência
+Artificial destacam-se:
+
+   •   Verificar a veracidade das informações: As respostas geradas por sistemas
+       de IA podem conter erros, informações desatualizadas ou interpretações
+       incorretas. Por isso, recomenda-se sempre confirmar os dados em fontes
+       confiáveis, como instituições governamentais, universidades, artigos
+       científicos e organizações reconhecidas.
+   •   Não compartilhar informações pessoais ou sigilosas: Dados como senhas,
+       números de documentos, informações bancárias, prontuários médicos e
+       documentos confidenciais não devem ser inseridos em plataformas de
+       Inteligência Artificial, especialmente quando não houver garantia sobre a forma
+       de armazenamento e tratamento dessas informações.
+   •   Utilizar a IA como ferramenta de apoio: A Inteligência Artificial deve auxiliar
+       atividades de estudo, pesquisa, trabalho e criatividade, mas não substituir
+        completamente a capacidade humana de análise, interpretação e tomada de
+        decisões. O conhecimento adquirido pelo próprio usuário continua sendo
+        indispensável.
+   •    Desenvolver pensamento crítico: Nem todo conteúdo produzido por IA é
+        verdadeiro ou imparcial. É importante analisar diferentes pontos de vista,
+        comparar informações e refletir criticamente antes de aceitar uma resposta
+        como correta.
+   •    Respeitar os direitos autorais e a autoria intelectual: Ao utilizar conteúdos
+        produzidos com auxílio de Inteligência Artificial, é importante respeitar normas
+        acadêmicas e profissionais, evitando plágio e reconhecendo adequadamente
+        as fontes utilizadas quando necessário.
+   •    Utilizar ferramentas confiáveis: Sempre que possível, recomenda-se utilizar
+        plataformas desenvolvidas por empresas ou instituições reconhecidas, que
+        disponibilizem políticas claras sobre privacidade, segurança e tratamento dos
+        dados dos usuários.
+   •    Manter-se atualizado: A Inteligência Artificial evolui constantemente.
+        Acompanhar notícias, pesquisas e atualizações sobre essa tecnologia permite
+        compreender melhor seus benefícios, limitações e impactos na sociedade.
+
+CHECKLIST
+
+☐ Verificar informações
+
+☐ Confirmar fontes
+
+☐ Não compartilhar dados pessoais
+
+☐ Utilizar IA como apoio
+
+☐ Respeitar direitos autorais
+
+☐ Desenvolver pensamento crítico
+
+☐ Manter-se atualizado
+
+
+       Para refletir
+
+ A Inteligência Artificial é uma ferramenta extremamente poderosa. No entanto,
+ seu verdadeiro potencial depende da forma como cada pessoa escolhe utilizá-la.
+ Quanto maior o conhecimento sobre seu funcionamento, maiores são as
+ possibilidades de aproveitar seus benefícios com responsabilidade, segurança e
+ ética.
+                                  REFERÊNCIAS
+
+BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados
+Pessoais (LGPD). Diário Oficial da União: Brasília, DF, 15 ago. 2018.
+
+RUSSELL, Stuart; NORVIG, Peter. Inteligência Artificial: uma abordagem
+moderna. 4. ed. São Paulo: Pearson, 2022.
+
+TURING, Alan M. Computing Machinery and Intelligence. Mind, Oxford, v. 59, n.
+236, p. 433-460, 1950.
+
+UNESCO. Recommendation on the Ethics of Artificial Intelligence. Paris:
+UNESCO, 2021.
+
+OECD. OECD AI Principles. Paris: Organisation for Economic Co-operation and
+Development, 2019.
+
+IBM.     What     is     Artificial      Intelligence      (AI)?    Disponível     em:
+https://www.ibm.com/think/topics/artificial-intelligence. Acesso em: 26 jul. 2026.
+
+MICROSOFT.              Responsible            AI.          Disponível            em:
+https://www.microsoft.com/ai/responsible-ai. Acesso em: 26 jul. 2026.
+

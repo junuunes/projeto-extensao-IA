@@ -1,0 +1,1052 @@
+Quero que você atue como um desenvolvedor front-end e designer UX/UI especializado em experiências educacionais digitais.
+
+Sua tarefa é criar uma página web completa para uma Atividade Extensionista do curso de Engenharia de Software.
+
+O site deverá transformar o conteúdo do PDF anexado “Guia Educativo sobre Inteligência Artificial: conceitos, aplicações, riscos e uso consciente na sociedade digital” em uma experiência digital educativa, moderna, acessível, interativa e agradável de navegar.
+
+IMPORTANTE:
+Não quero que o conteúdo do PDF seja simplesmente copiado para a página. Analise o material, identifique os conceitos mais importantes e resuma e adapte as informações para leitura na web, preservando o significado e a precisão do conteúdo original.
+
+O PDF deve ser considerado a principal fonte de conteúdo da página.
+
+Não invente estatísticas, fatos, leis, estudos ou informações que não estejam presentes no documento. Caso alguma informação complementar seja absolutamente necessária, utilize apenas fontes reconhecidas e deixe claro que se trata de conteúdo adicional. Priorize sempre o PDF fornecido.
+
+
+==================================================
+1. CONTEXTO DO PROJETO
+==================================================
+
+Esta página faz parte da Atividade Extensionista:
+
+“Desmistificando a Inteligência Artificial: Uso Consciente e Seguro na Sociedade Digital”.
+
+Modalidade: Projeto de Letramento Digital.
+
+Curso: Engenharia de Software.
+
+ODS relacionados:
+
+- ODS 4 — Educação de qualidade;
+- ODS 9 — Indústria, inovação e infraestrutura;
+- ODS 10 — Redução das desigualdades.
+
+O objetivo da ação extensionista é promover o letramento digital e contribuir para que pessoas da comunidade compreendam melhor a Inteligência Artificial e saibam utilizá-la de maneira consciente, crítica, segura e ética.
+
+
+==================================================
+2. TEMA DA PÁGINA
+==================================================
+
+O título principal da experiência deverá ser:
+
+“Inteligência Artificial sem mistério”
+
+Subtítulo:
+
+“Como utilizar IA de forma consciente e segura no dia a dia”
+
+A página não deve parecer um artigo acadêmico ou uma apostila simplesmente colocada na internet.
+
+Ela deve transformar o conteúdo acadêmico em uma experiência educativa voltada ao público geral.
+
+
+==================================================
+3. PÚBLICO-ALVO
+==================================================
+
+O público-alvo é:
+
+“Adultos usuários de tecnologias digitais que utilizam ou possuem contato com ferramentas de Inteligência Artificial, mas que não possuem formação técnica específica na área.”
+
+Portanto:
+
+- não presuma conhecimentos técnicos;
+- evite jargões desnecessários;
+- explique termos técnicos quando forem necessários;
+- utilize exemplos cotidianos;
+- utilize linguagem clara e natural;
+- não infantilize o usuário;
+- mantenha precisão conceitual.
+
+O visitante deverá conseguir compreender a página mesmo sem conhecimento prévio sobre Inteligência Artificial ou programação.
+
+
+==================================================
+4. FORMATO DA EXPERIÊNCIA
+==================================================
+
+Crie uma LANDING PAGE LONGA, DE PÁGINA ÚNICA, com rolagem vertical.
+
+A navegação deverá conduzir o usuário progressivamente pelo conteúdo.
+
+Estrutura principal:
+
+Início
+↓
+O que é Inteligência Artificial
+↓
+IA no cotidiano
+↓
+Como a IA funciona
+↓
+IA Generativa
+↓
+Benefícios
+↓
+Riscos
+↓
+Ética
+↓
+Uso consciente e seguro
+↓
+Quiz
+↓
+Feedback
+↓
+Fontes
+
+Utilize navegação por âncoras para permitir que o usuário acesse as principais seções.
+
+Se fizer sentido para a experiência, utilize um menu superior fixo ou compacto.
+
+
+==================================================
+5. IDENTIDADE VISUAL
+==================================================
+
+Quero uma aparência:
+
+- moderna;
+- tecnológica;
+- profissional;
+- educativa;
+- visualmente interessante;
+- limpa;
+- confiável.
+
+Utilize uma paleta baseada principalmente em TONS DE ROXO.
+
+Pode combinar:
+
+- roxo profundo;
+- violeta;
+- lavanda;
+- tons neutros;
+- branco;
+- cinza muito escuro;
+- fundos escuros quando fizer sentido.
+
+A página deve transmitir tecnologia e Inteligência Artificial sem cair em um visual exageradamente futurista ou carregado.
+
+Pode utilizar:
+
+- gradientes discretos;
+- brilhos suaves;
+- elementos geométricos;
+- linhas representando conexões;
+- ícones relacionados a IA;
+- circuitos;
+- redes;
+- cérebro digital;
+- dados;
+- segurança;
+- privacidade;
+- pensamento crítico.
+
+Evite excesso de elementos decorativos.
+
+O conteúdo deve continuar sendo o foco principal.
+
+
+==================================================
+6. HERO / PRIMEIRA TELA
+==================================================
+
+A primeira seção deve causar uma boa primeira impressão e explicar imediatamente a proposta da página.
+
+Inclua:
+
+Título:
+“Inteligência Artificial sem mistério”
+
+Subtítulo:
+“Como utilizar IA de forma consciente e segura no dia a dia”
+
+Inclua uma pequena chamada convidativa explicando que a IA já faz parte da vida cotidiana e que conhecer suas possibilidades, limitações e riscos é fundamental para utilizá-la de maneira responsável.
+
+Adicione um botão como:
+
+“Começar a explorar”
+
+Ao clicar, o usuário deve ser levado suavemente para a próxima seção.
+
+Pode haver uma ilustração ou composição gráfica relacionada à Inteligência Artificial.
+
+
+==================================================
+7. SEÇÃO — O QUE É INTELIGÊNCIA ARTIFICIAL?
+==================================================
+
+Explique de maneira resumida e acessível:
+
+- o conceito de Inteligência Artificial;
+- que ela pertence à área da Computação;
+- que sistemas de IA podem executar determinadas tarefas normalmente associadas à inteligência humana;
+- reconhecimento de padrões;
+- linguagem;
+- imagens;
+- tomada de decisões;
+- resolução de problemas.
+
+Evite blocos longos de texto.
+
+Utilize pequenos parágrafos, destaques visuais e exemplos.
+
+Inclua algum destaque como:
+
+“IA não significa apenas robôs.”
+
+Mostre que ela está presente em diversos sistemas utilizados diariamente.
+
+
+==================================================
+8. SEÇÃO — IA NO COTIDIANO
+==================================================
+
+Mostre exemplos facilmente reconhecíveis.
+
+Utilize cartões ou elementos visuais para representar situações como:
+
+- recomendações do Spotify;
+- recomendações do YouTube;
+- Google Maps;
+- mecanismos de busca;
+- redes sociais;
+- comércio eletrônico;
+- sistemas bancários;
+- streaming;
+- assistentes virtuais;
+- tradutores;
+- chatbots.
+
+Inclua uma chamada do tipo:
+
+“Você provavelmente já utilizou Inteligência Artificial hoje sem perceber.”
+
+A intenção dessa seção é aproximar a tecnologia da realidade do visitante.
+
+
+==================================================
+9. SEÇÃO — COMO A IA FUNCIONA?
+==================================================
+
+Explique de maneira bastante simples a relação entre:
+
+DADOS
+↓
+ALGORITMOS
+↓
+IDENTIFICAÇÃO DE PADRÕES
+↓
+RESULTADO
+
+Utilize um pequeno fluxograma ou elemento visual animado.
+
+Utilize também o exemplo presente no PDF sobre aprender a reconhecer gatos ou outro exemplo equivalente existente no material.
+
+Explique de maneira resumida:
+
+- treinamento;
+- dados;
+- algoritmos;
+- identificação de padrões;
+- redes neurais.
+
+Inclua um destaque importante:
+
+“A IA não pensa como uma pessoa.”
+
+Explique que esses sistemas realizam cálculos e reconhecem padrões a partir dos dados e modelos utilizados.
+
+Não antropomorfize excessivamente a tecnologia.
+
+
+==================================================
+10. SEÇÃO — IA GENERATIVA
+==================================================
+
+Explique o que diferencia a IA Generativa.
+
+Mostre que ela pode gerar:
+
+- textos;
+- imagens;
+- músicas;
+- vídeos;
+- códigos;
+- traduções.
+
+Pode utilizar pequenos cards com ícones.
+
+Explique também que ferramentas como ChatGPT, Gemini e Copilot tornaram esse tipo de tecnologia mais acessível ao público.
+
+Destaque:
+
+“Uma resposta convincente não é necessariamente uma resposta verdadeira.”
+
+Apresente de forma simples o conceito de “alucinação da IA”.
+
+Explique que ferramentas de IA podem gerar informações incorretas ou inexistentes mesmo apresentando a resposta de maneira muito convincente.
+
+
+==================================================
+11. SEÇÃO — BENEFÍCIOS
+==================================================
+
+Crie uma seção visual mostrando aplicações positivas em diferentes áreas.
+
+Pode utilizar cartões para:
+
+- saúde;
+- educação;
+- indústria;
+- comércio;
+- setor financeiro;
+- Engenharia de Software.
+
+Explique de maneira curta como a IA pode contribuir em cada uma.
+
+Não transforme essa seção em uma lista excessivamente grande.
+
+
+==================================================
+12. SEÇÃO — RISCOS
+==================================================
+
+Esta deve ser uma das seções mais importantes da página.
+
+Apresente de maneira acessível os seguintes riscos:
+
+
+FAKE NEWS
+
+Explique como ferramentas digitais e sistemas de IA podem facilitar a criação e disseminação de conteúdos falsos.
+
+
+DEEPFAKES
+
+Explique que imagens, vídeos e áudios podem ser manipulados para simular pessoas reais dizendo ou fazendo coisas que nunca aconteceram.
+
+
+PRIVACIDADE
+
+Explique os riscos relacionados à exposição, utilização e tratamento inadequado de dados pessoais.
+
+
+DADOS PESSOAIS
+
+Crie um destaque visual de alerta.
+
+Título sugerido:
+
+“Pense antes de compartilhar.”
+
+Explique que é necessário ter cuidado antes de inserir informações pessoais ou sigilosas em ferramentas de Inteligência Artificial.
+
+Evite inserir:
+
+- CPF;
+- senhas;
+- dados bancários;
+- prontuários médicos;
+- contratos confidenciais;
+- documentos sigilosos;
+- informações profissionais confidenciais.
+
+
+VIESES ALGORÍTMICOS
+
+Explique de maneira simples que modelos treinados com dados históricos podem reproduzir distorções, desigualdades e preconceitos presentes nesses dados.
+
+
+==================================================
+13. INTERAÇÃO — “VOCÊ FARIA ISSO?”
+==================================================
+
+Dentro da seção de riscos ou imediatamente após ela, crie uma experiência interativa curta.
+
+Título sugerido:
+
+“Você faria isso?”
+
+Mostre situações do cotidiano e permita que o usuário escolha uma resposta.
+
+EXEMPLO 1:
+
+“Você precisa revisar um contrato confidencial do trabalho. Você enviaria o documento inteiro para uma ferramenta pública de IA?”
+
+Opções:
+
+SIM
+NÃO
+
+Após a escolha, revele uma explicação educativa informando por que a opção mais segura é não compartilhar conteúdos confidenciais sem conhecer as políticas de privacidade e tratamento de dados da ferramenta.
+
+
+EXEMPLO 2:
+
+“Uma IA respondeu a uma pergunta com muita confiança. Você compartilharia imediatamente a informação sem verificar?”
+
+Opções:
+
+SIM
+NÃO
+
+Após a escolha, explique a importância de verificar informações em fontes confiáveis.
+
+Pode criar outras situações semelhantes utilizando SOMENTE conceitos presentes no PDF.
+
+Essa interação deve ser rápida e educativa.
+
+Ela não deve parecer uma prova.
+
+
+==================================================
+14. SEÇÃO — ÉTICA
+==================================================
+
+Apresente os principais princípios discutidos no PDF por meio de elementos visuais.
+
+Inclua:
+
+- transparência;
+- responsabilidade;
+- privacidade;
+- equidade;
+- autoria;
+- julgamento humano.
+
+Pode utilizar cards.
+
+Explique de maneira acessível cada princípio.
+
+Destaque que utilizar uma ferramenta de IA não transfere automaticamente a responsabilidade das decisões para a tecnologia.
+
+Aborde também o uso acadêmico responsável da IA.
+
+Explique que a IA pode ser utilizada como apoio ao aprendizado, mas deve-se preservar:
+
+- autoria intelectual;
+- pensamento crítico;
+- verificação das informações;
+- aprendizado real;
+- respeito às normas acadêmicas.
+
+
+==================================================
+15. SEÇÃO — USO CONSCIENTE E SEGURO
+==================================================
+
+Esta seção deverá funcionar como uma síntese prática da página.
+
+Transforme as recomendações do PDF em uma checklist visual.
+
+Inclua:
+
+☑ Verificar informações.
+
+☑ Confirmar fontes.
+
+☑ Não compartilhar dados pessoais ou sigilosos.
+
+☑ Utilizar IA como ferramenta de apoio.
+
+☑ Desenvolver pensamento crítico.
+
+☑ Respeitar autoria e direitos autorais.
+
+☑ Utilizar ferramentas confiáveis.
+
+☑ Manter-se atualizado.
+
+Pode transformar os itens em cards ou em uma checklist interativa.
+
+Se forem itens clicáveis, nenhuma informação deverá ser armazenada.
+
+Inclua uma pequena conclusão reforçando que a Inteligência Artificial é uma ferramenta poderosa, mas seus benefícios dependem da forma como as pessoas escolhem utilizá-la.
+
+
+==================================================
+16. QUIZ INTERATIVO
+==================================================
+
+Depois do conteúdo educativo, crie uma seção com o título:
+
+“Será que você está preparado para usar IA com segurança?”
+
+Desenvolva um quiz com EXATAMENTE 6 PERGUNTAS.
+
+As perguntas devem ser baseadas exclusivamente nos conceitos apresentados anteriormente.
+
+Distribua os assuntos desta forma:
+
+1. funcionamento básico da IA;
+2. alucinação e verificação de informações;
+3. proteção de dados pessoais;
+4. fake news ou deepfakes;
+5. ética ou responsabilidade;
+6. boas práticas de uso consciente.
+
+Cada pergunta deverá possuir preferencialmente 4 alternativas.
+
+Somente uma alternativa deve estar correta.
+
+Após o usuário escolher uma resposta:
+
+- indique visualmente se está correta ou incorreta;
+- apresente uma explicação curta;
+- explique por que aquela resposta é correta;
+- não mostre apenas “certo” ou “errado”.
+
+O objetivo é que o próprio quiz também ensine.
+
+Não utilize perguntas excessivamente técnicas.
+
+
+==================================================
+17. RESULTADO DO QUIZ
+==================================================
+
+Depois da sexta pergunta, apresente:
+
+“Você acertou X de 6 questões.”
+
+Exiba uma mensagem de acordo com o desempenho.
+
+
+5 OU 6 ACERTOS:
+
+“Excelente! Você demonstra bons conhecimentos sobre o uso consciente e seguro da Inteligência Artificial.”
+
+
+3 OU 4 ACERTOS:
+
+“Bom resultado! Você já conhece importantes cuidados, mas ainda existem alguns pontos que vale revisar.”
+
+
+0, 1 OU 2 ACERTOS:
+
+“Este é um ótimo momento para revisar algumas das orientações da página. Quanto mais conhecemos a tecnologia, mais seguros podemos utilizá-la.”
+
+
+Inclua um botão:
+
+“Refazer quiz”
+
+Não faça rankings.
+
+Não solicite:
+
+- nome;
+- e-mail;
+- telefone;
+- login;
+- cadastro;
+- nenhum dado pessoal.
+
+O resultado pode existir somente durante a sessão no navegador.
+
+
+==================================================
+18. FEEDBACK
+==================================================
+
+Depois do quiz, crie uma seção curta explicando que o projeto faz parte de uma atividade extensionista e que a opinião do participante é importante para avaliar a ação.
+
+Título sugerido:
+
+“Sua opinião também faz parte deste projeto.”
+
+Inclua um texto curto explicando que o feedback ajudará a compreender se o conteúdo contribuiu para ampliar o conhecimento sobre o uso consciente e seguro da Inteligência Artificial.
+
+Inclua um botão destacado:
+
+“Responder formulário de feedback”
+
+O formulário será criado posteriormente no Google Forms.
+
+Como o link ainda não existe, configure o botão utilizando um PLACEHOLDER claramente identificado.
+
+Utilize algo como:
+
+GOOGLE_FORMS_URL
+
+ou
+
+#INSERIR_LINK_GOOGLE_FORMS
+
+O local deve ser extremamente fácil de encontrar e substituir posteriormente.
+
+O Google Forms será externo à página.
+
+
+==================================================
+19. FONTES E REFERÊNCIAS
+==================================================
+
+Crie uma seção final de referências baseada nas fontes presentes no PDF.
+
+Inclua, conforme constam no documento:
+
+- BRASIL. Lei nº 13.709, de 14 de agosto de 2018 — Lei Geral de Proteção de Dados Pessoais (LGPD);
+
+- RUSSELL, Stuart; NORVIG, Peter. Inteligência Artificial: uma abordagem moderna. 4. ed. São Paulo: Pearson, 2022;
+
+- TURING, Alan M. Computing Machinery and Intelligence. Mind, Oxford, v. 59, n. 236, p. 433-460, 1950;
+
+- UNESCO. Recommendation on the Ethics of Artificial Intelligence. Paris: UNESCO, 2021;
+
+- OECD. OECD AI Principles. Paris: Organisation for Economic Co-operation and Development, 2019;
+
+- IBM. What is Artificial Intelligence (AI)?;
+
+- MICROSOFT. Responsible AI.
+
+Não invente referências inexistentes.
+
+Utilize prioritariamente as informações bibliográficas apresentadas no PDF.
+
+Essa seção pode ser visualmente mais discreta, mas deve continuar legível.
+
+
+==================================================
+20. IDENTIFICAÇÃO ACADÊMICA
+==================================================
+
+No rodapé, inclua uma área discreta com:
+
+“Projeto de Extensão — Engenharia de Software”
+
+“Desmistificando a Inteligência Artificial: Uso Consciente e Seguro na Sociedade Digital”
+
+“Acadêmica: [INSERIR NOME]”
+
+“Instituição: Unicesumar”
+
+Não inserir:
+
+- RA;
+- telefone;
+- e-mail;
+- endereço;
+- outros dados pessoais.
+
+
+==================================================
+21. RESPONSIVIDADE
+==================================================
+
+RESPONSIVIDADE É UM REQUISITO PRIORITÁRIO.
+
+A maioria das pessoas provavelmente acessará o site através de um STORY DO INSTAGRAM utilizando o celular.
+
+Portanto, desenvolva utilizando abordagem MOBILE-FIRST.
+
+A página deve funcionar perfeitamente em:
+
+- smartphones;
+- tablets;
+- notebooks;
+- desktops.
+
+Garanta:
+
+- textos legíveis;
+- botões confortáveis para toque;
+- espaçamento adequado;
+- cards que se reorganizem corretamente;
+- ausência de rolagem horizontal;
+- elementos gráficos responsivos;
+- quiz confortável em telas pequenas;
+- menu adaptado ao celular;
+- boa velocidade de carregamento.
+
+Considere especialmente larguras próximas de:
+
+360 px
+390 px
+768 px
+1366 px
+
+
+==================================================
+22. ACESSIBILIDADE
+==================================================
+
+Aplique boas práticas de acessibilidade.
+
+Inclua:
+
+- HTML semântico;
+- contraste adequado entre texto e fundo;
+- tamanho de fonte confortável;
+- hierarquia correta de títulos;
+- labels quando necessários;
+- estados de foco visíveis;
+- suporte à navegação por teclado;
+- textos alternativos em imagens informativas;
+- botões facilmente identificáveis;
+- não depender exclusivamente de cores para indicar resposta correta ou incorreta;
+- estrutura compreensível para leitores de tela;
+- respeito à preferência prefers-reduced-motion.
+
+Não utilize animações que prejudiquem a leitura ou acessibilidade.
+
+
+==================================================
+23. ANIMAÇÕES E MICROINTERAÇÕES
+==================================================
+
+Pode utilizar animações discretas para melhorar a experiência.
+
+Exemplos:
+
+- entrada suave dos elementos durante a rolagem;
+- hover em cards;
+- transições;
+- barra ou indicador de progresso do quiz;
+- pequenos movimentos em elementos gráficos;
+- scroll suave;
+- feedback visual ao selecionar respostas.
+
+Evite:
+
+- animações excessivas;
+- elementos piscando;
+- parallax intenso;
+- efeitos pesados;
+- elementos que dificultem a leitura;
+- recursos que prejudiquem desempenho em celulares.
+
+A tecnologia deve ajudar o conteúdo, não competir com ele.
+
+
+==================================================
+24. ELEMENTOS GRÁFICOS
+==================================================
+
+Utilize ícones e elementos gráficos modernos relacionados a:
+
+- Inteligência Artificial;
+- cérebro ou rede neural;
+- dados;
+- segurança;
+- privacidade;
+- educação;
+- pensamento crítico;
+- verificação;
+- tecnologia;
+- ética.
+
+Prefira:
+
+- ícones;
+- vetores;
+- ilustrações leves;
+- elementos geométricos.
+
+Evite depender de grandes arquivos externos.
+
+Caso utilize biblioteca de ícones, mantenha o projeto simples e confiável.
+
+Não utilize imagens apenas como decoração em excesso.
+
+
+==================================================
+25. TECNOLOGIA
+==================================================
+
+Como ainda não está definida a plataforma de hospedagem, desenvolva a solução de maneira PORTÁTIL E FÁCIL DE PUBLICAR.
+
+Priorize:
+
+HTML
+CSS
+JavaScript puro
+
+Caso o ambiente no qual você esteja executando este projeto exija outra tecnologia, você pode utilizá-la, mas:
+
+- evite frameworks desnecessários;
+- não crie backend;
+- não utilize banco de dados;
+- não exija autenticação;
+- não crie sistema de cadastro;
+- não solicite dados pessoais;
+- mantenha o projeto facilmente publicável como site estático.
+
+O quiz deverá funcionar no próprio navegador.
+
+O formulário de avaliação será realizado externamente pelo Google Forms.
+
+
+==================================================
+26. ORGANIZAÇÃO DO CONTEÚDO
+==================================================
+
+NÃO transforme cada seção em vários parágrafos longos.
+
+O PDF é a base acadêmica, mas o conteúdo deve ser ADAPTADO PARA A WEB.
+
+Utilize recursos como:
+
+- títulos;
+- subtítulos;
+- textos curtos;
+- cards;
+- checklists;
+- caixas de atenção;
+- destaques;
+- ícones;
+- perguntas reflexivas;
+- pequenos diagramas;
+- recursos interativos.
+
+A leitura deve ser confortável tanto para alguém que queira ler toda a página quanto para alguém que apenas percorra rapidamente as seções.
+
+Evite grandes “paredes de texto”.
+
+
+==================================================
+27. EXPERIÊNCIA PEDAGÓGICA
+==================================================
+
+A página não deve apenas fornecer informações.
+
+Ela deve conduzir o visitante por três momentos:
+
+
+1. DESCOBRIR
+
+“O que é IA e onde ela aparece na minha vida?”
+
+
+2. REFLETIR
+
+“Quais riscos, limitações e responsabilidades existem?”
+
+
+3. AGIR
+
+“Que atitudes posso adotar para utilizar IA de maneira mais segura e consciente?”
+
+
+O quiz e o formulário de feedback deverão aparecer naturalmente depois desse percurso.
+
+
+==================================================
+28. TOM DE VOZ
+==================================================
+
+Utilize linguagem:
+
+- educativa;
+- acessível;
+- amigável;
+- objetiva;
+- confiável;
+- moderna;
+- respeitosa.
+
+Evite frases alarmistas sobre Inteligência Artificial.
+
+A página deve apresentar tanto possibilidades quanto riscos.
+
+Não trate Inteligência Artificial como algo necessariamente positivo ou negativo.
+
+O foco é:
+
+USO CONSCIENTE
++
+PENSAMENTO CRÍTICO
++
+SEGURANÇA
++
+RESPONSABILIDADE
+
+
+==================================================
+29. RESULTADO ESPERADO PARA O VISITANTE
+==================================================
+
+Ao terminar a experiência, o visitante deverá compreender:
+
+- o que é Inteligência Artificial;
+- onde ela está presente no cotidiano;
+- de maneira simples, como ela funciona;
+- o que é IA Generativa;
+- que sistemas de IA podem produzir informações incorretas;
+- que respostas importantes precisam ser verificadas;
+- por que dados pessoais e sigilosos precisam ser protegidos;
+- os riscos relacionados a fake news e deepfakes;
+- a existência de vieses algorítmicos;
+- a importância da ética;
+- a importância da responsabilidade humana;
+- boas práticas para utilização consciente da tecnologia.
+
+
+==================================================
+30. FLUXO DA AÇÃO EXTENSIONISTA
+==================================================
+
+Considere que o fluxo completo da ação será:
+
+STORY DO INSTAGRAM
+↓
+LINK PARA A PÁGINA WEB
+↓
+VISITANTE ACESSA O CONTEÚDO EDUCATIVO
+↓
+INTERAGE COM AS SEÇÕES
+↓
+REALIZA O QUIZ
+↓
+RECEBE O RESULTADO
+↓
+É CONVIDADO A RESPONDER AO GOOGLE FORMS
+↓
+FEEDBACK É COLETADO PARA AVALIAÇÃO DA AÇÃO EXTENSIONISTA
+
+A página web será, portanto, a principal solução educativa da ação.
+
+O Instagram será apenas o canal de divulgação.
+
+O Google Forms será utilizado posteriormente para avaliação da experiência.
+
+
+==================================================
+31. REQUISITOS IMPORTANTES
+==================================================
+
+Antes de considerar o projeto concluído, verifique obrigatoriamente:
+
+[ ] Página funcionando corretamente.
+
+[ ] Design moderno e tecnológico em tons de roxo.
+
+[ ] Landing page de rolagem vertical.
+
+[ ] Conteúdo adaptado do PDF.
+
+[ ] Linguagem adequada ao público não técnico.
+
+[ ] Hero funcionando.
+
+[ ] Navegação funcionando.
+
+[ ] Seção “O que é IA”.
+
+[ ] Seção “IA no cotidiano”.
+
+[ ] Seção “Como funciona”.
+
+[ ] Seção “IA Generativa”.
+
+[ ] Seção de benefícios.
+
+[ ] Seção de riscos.
+
+[ ] Interação “Você faria isso?”.
+
+[ ] Seção de ética.
+
+[ ] Checklist de uso consciente.
+
+[ ] Quiz com exatamente 6 perguntas.
+
+[ ] Feedback imediato das respostas do quiz.
+
+[ ] Cálculo correto da pontuação.
+
+[ ] Resultado final do quiz.
+
+[ ] Botão “Refazer quiz”.
+
+[ ] Seção do Google Forms com placeholder.
+
+[ ] Referências.
+
+[ ] Identificação acadêmica.
+
+[ ] Funcionamento correto em celular.
+
+[ ] Funcionamento correto em desktop.
+
+[ ] Acessibilidade básica.
+
+[ ] Ausência de rolagem horizontal.
+
+[ ] Ortografia revisada.
+
+[ ] Conteúdo coerente com o PDF.
+
+[ ] Nenhum dado ou estatística inventada.
+
+
+==================================================
+32. ENTREGA
+==================================================
+
+Gere A PÁGINA COMPLETA.
+
+Ela deve estar:
+
+- funcional;
+- visualmente finalizada;
+- responsiva;
+- interativa;
+- pronta para publicação.
+
+Não entregue apenas um wireframe.
+
+Não entregue apenas uma descrição de como ela poderia ser.
+
+Não entregue somente uma proposta visual.
+
+CONSTRUA EFETIVAMENTE A PÁGINA.
+
+Entregue todos os arquivos necessários para execução.
+
+Caso utilize HTML, CSS e JavaScript puro, organize preferencialmente como:
+
+index.html
+style.css
+script.js
+
+E uma pasta de assets apenas se realmente necessária.
+
+O projeto deve funcionar abrindo o index.html ou através de um servidor estático simples.
+
+Antes de finalizar, teste e revise:
+
+- responsividade;
+- navegação;
+- links internos;
+- interações;
+- funcionamento das seis perguntas;
+- cálculo da pontuação;
+- botão de refazer quiz;
+- placeholder do Google Forms;
+- hierarquia visual;
+- ortografia;
+- acessibilidade;
+- consistência do conteúdo com o PDF.
+
+IMPORTANTE:
+
+Não responda apenas explicando o que pretende fazer.
+
+Não me entregue um tutorial.
+
+Não me peça para montar as partes manualmente.
+
+Analise o PDF anexado e gere efetivamente a solução completa seguindo todas as especificações acima.

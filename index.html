@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inteligência Artificial sem mistério | Uso consciente e seguro no dia a dia</title>
+<meta name="description" content="Descubra o que é Inteligência Artificial, onde ela aparece no seu dia a dia, quais são seus riscos e como utilizá-la de forma consciente e segura. Projeto de extensão do curso de Engenharia de Software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sprite de ícones SVG reutilizáveis -->
+<svg class="icon-sprite" aria-hidden="true" style="display:none">
+  <symbol id="icon-brain" viewBox="0 0 24 24"><path d="M9.5 2a3.5 3.5 0 0 0-3.5 3.5v.6A3.5 3.5 0 0 0 3 9.5c0 1.2.6 2.3 1.5 3-.3.6-.5 1.3-.5 2 0 2.2 1.6 4 3.7 4.4.3 1.5 1.6 2.6 3.3 2.6.6 0 1.1-.1 1.5-.4.4.3 1 .4 1.5.4 1.7 0 3-1.1 3.3-2.6 2.1-.4 3.7-2.2 3.7-4.4 0-.7-.2-1.4-.5-2 .9-.7 1.5-1.8 1.5-3a3.5 3.5 0 0 0-3-3.4v-.6A3.5 3.5 0 0 0 15.5 2c-.9 0-1.7.3-2.3.9A3.5 3.5 0 0 0 12 2.5c-.5 0-1 .1-1.4.3A3.5 3.5 0 0 0 9.5 2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 6v13M9 9.5c-1 0-2 .5-2 2M15 9.5c1 0 2 .5 2 2M8 15c-.8 0-1.5-.7-1.5-1.8M16 15c.8 0 1.5-.7 1.5-1.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 7.8 8 9 4.5-1.2 8-4 8-9V6l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m9 12 2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor"/></symbol>
+  <symbol id="icon-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 5.5V12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V5.5M5 12v6.5C5 20 8.1 21 12 21s7-1 7-2.5V12" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 5h16v10H9l-4 4v-4H4V5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m20 20-4.3-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="icon-network" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="13" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="19" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="19" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 7.3 10.5 11.5M16.5 7.3 13.5 11.5M11 14.5 7.5 17.7M13 14.5 16.5 17.7" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="m4 12 6 6L20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="9.5" r="1.6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="m4.5 17 5-5 3 3 3.5-4.5 4.5 5.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-music" viewBox="0 0 24 24"><path d="M9 18V5.5l10-2V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16.5" cy="16" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m16 10 5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-code" viewBox="0 0 24 24"><path d="m9 8-4 4 4 4M15 8l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-translate" viewBox="0 0 24 24"><path d="M4 6h9M8.5 4v2.5C8.5 10 6 12.5 3.5 12.5M5 9.5c1 1.3 3 2.5 5 2.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M14 20l3.5-9 3.5 9M15 17.5h5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-health" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.4C1 8.2 3 5 6.4 5c2 0 3.3 1.1 4 2.3.7-1.2 2-2.3 4-2.3C17.9 5 20 8.2 18.5 11.6 16.4 16.4 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12h2l1-2 2 4 1-2h1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5C4.7 20 4 19.3 4 18.5v-13ZM20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5v-13Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-factory" viewBox="0 0 24 24"><path d="M3 20V11l5 3v-3l5 3v-3l5 3v6H3Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6 20v-4M10 20v-3M14 20v-3M18 20v-3" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <symbol id="icon-bank" viewBox="0 0 24 24"><path d="M4 10 12 4l8 6M5 10v9M9 10v9M15 10v9M19 10v9M3 19h18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="icon-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v2.5M12 18.5V21M21 12h-2.5M5.5 12H3M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8M18.4 18.4l-1.8-1.8M7.4 7.4 5.6 5.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="icon-balance" viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-2.5 5h5L5 7ZM19 7l-2.5 5h5L19 7ZM8 21h8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="icon-pen" viewBox="0 0 24 24"><path d="m4 20 1-4.5L16.5 4 20 7.5 8.5 19 4 20Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="m14 6 3.5 3.5" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="icon-scales" viewBox="0 0 24 24"><path d="M12 3v3M4 11h16M8 6h8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M4 11l-2 6a4 4 0 0 0 8 0l-2-6M20 11l-2 6a4 4 0 0 0 8 0l-2-6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M4 4v4h4M20 20v-4h-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <svg class="brand-icon" aria-hidden="true"><use href="#icon-brain"></use></svg>
+      <span>IA sem mistério</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#o-que-e">O que é IA</a></li>
+        <li><a href="#cotidiano">Cotidiano</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#generativa">IA Generativa</a></li>
+        <li><a href="#riscos">Riscos</a></li>
+        <li><a href="#etica">Ética</a></li>
+        <li><a href="#uso-consciente">Uso consciente</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu de navegação">
+      <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo-principal">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Introdução">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-network" viewBox="0 0 600 600" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1" fill="none" opacity="0.5">
+          <circle cx="120" cy="140" r="4" fill="currentColor"/>
+          <circle cx="300" cy="90" r="5" fill="currentColor"/>
+          <circle cx="480" cy="160" r="4" fill="currentColor"/>
+          <circle cx="200" cy="260" r="6" fill="currentColor"/>
+          <circle cx="420" cy="300" r="4" fill="currentColor"/>
+          <circle cx="90" cy="380" r="4" fill="currentColor"/>
+          <circle cx="330" cy="430" r="5" fill="currentColor"/>
+          <circle cx="500" cy="420" r="4" fill="currentColor"/>
+          <circle cx="230" cy="500" r="4" fill="currentColor"/>
+          <path d="M120,140 L300,90 M300,90 L480,160 M120,140 L200,260 M300,90 L200,260 M480,160 L420,300 M200,260 L420,300 M200,260 L90,380 M420,300 L330,430 M90,380 L330,430 M330,430 L500,420 M330,430 L230,500"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow">Projeto de Extensão · Engenharia de Software</p>
+      <h1>Inteligência Artificial <span class="highlight">sem mistério</span></h1>
+      <p class="hero-subtitle">Como utilizar IA de forma consciente e segura no dia a dia</p>
+      <p class="hero-lead">A Inteligência Artificial já faz parte da sua rotina, mesmo que você não perceba. Entender suas possibilidades, limites e riscos é o primeiro passo para usá-la com mais segurança e responsabilidade.</p>
+      <a href="#o-que-e" class="btn btn-primary btn-large" data-scroll>
+        Começar a explorar
+        <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+      </a>
+    </div>
+    <a href="#o-que-e" class="scroll-hint" data-scroll aria-hidden="true">
+      <svg><use href="#icon-chevron-down"></use></svg>
+    </a>
+  </section>
+
+  <!-- O QUE É IA -->
+  <section class="section" id="o-que-e" aria-labelledby="titulo-o-que-e">
+    <div class="container">
+      <p class="section-tag">Descobrir</p>
+      <h2 id="titulo-o-que-e">O que é Inteligência Artificial?</h2>
+      <p class="section-lead">A Inteligência Artificial (IA) é um ramo da Ciência da Computação dedicado a criar sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana.</p>
+
+      <div class="callout callout-accent">
+        <svg aria-hidden="true"><use href="#icon-brain"></use></svg>
+        <p><strong>IA não significa apenas robôs.</strong> Ela está presente em mecanismos de busca, redes sociais, streaming, bancos, aplicativos de navegação, diagnósticos médicos e muito mais.</p>
+      </div>
+
+      <div class="grid grid-3 capabilities">
+        <div class="capability-card">
+          <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+          <h3>Reconhecer padrões</h3>
+          <p>Identifica semelhanças em imagens, sons e comportamentos.</p>
+        </div>
+        <div class="capability-card">
+          <svg aria-hidden="true"><use href="#icon-chat"></use></svg>
+          <h3>Compreender linguagem</h3>
+          <p>Interpreta e produz textos e falas em linguagem humana.</p>
+        </div>
+        <div class="capability-card">
+          <svg aria-hidden="true"><use href="#icon-image"></use></svg>
+          <h3>Interpretar imagens</h3>
+          <p>Analisa fotos e vídeos para extrair informações relevantes.</p>
+        </div>
+        <div class="capability-card">
+          <svg aria-hidden="true"><use href="#icon-gear"></use></svg>
+          <h3>Resolver problemas</h3>
+          <p>Encontra soluções para questões complexas a partir de dados.</p>
+        </div>
+        <div class="capability-card">
+          <svg aria-hidden="true"><use href="#icon-network"></use></svg>
+          <h3>Tomar decisões</h3>
+          <p>Sugere ou executa decisões com base em análises de dados.</p>
+        </div>
+        <div class="capability-card">
+          <svg aria-hidden="true"><use href="#icon-data"></use></svg>
+          <h3>Aprender com dados</h3>
+          <p>Melhora seu desempenho conforme analisa novas informações.</p>
+        </div>
+      </div>
+
+      <p class="section-note">Diferente da programação tradicional, em que todas as regras são definidas por um programador, muitos sistemas de IA aprendem a identificar padrões conforme analisam novos dados — o que os torna capazes de se adaptar a diferentes situações.</p>
+    </div>
+  </section>
+
+  <!-- IA NO COTIDIANO -->
+  <section class="section section-alt" id="cotidiano" aria-labelledby="titulo-cotidiano">
+    <div class="container">
+      <p class="section-tag">Descobrir</p>
+      <h2 id="titulo-cotidiano">IA no cotidiano</h2>
+      <p class="section-lead">Você provavelmente já utilizou Inteligência Artificial hoje sem perceber.</p>
+
+      <div class="grid grid-4 everyday-grid">
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-music"></use></svg>
+          <p>Recomendações de música em apps de streaming</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-video"></use></svg>
+          <p>Sugestões de vídeos em plataformas de streaming</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-network"></use></svg>
+          <p>Rotas mais rápidas em aplicativos de navegação</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+          <p>Resultados personalizados em mecanismos de busca</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-chat"></use></svg>
+          <p>Feed personalizado em redes sociais</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-image"></use></svg>
+          <p>Recomendações de produtos no comércio eletrônico</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-bank"></use></svg>
+          <p>Detecção de fraudes em sistemas bancários</p>
+        </div>
+        <div class="everyday-card">
+          <svg aria-hidden="true"><use href="#icon-translate"></use></svg>
+          <p>Assistentes virtuais e tradutores automáticos</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <svg aria-hidden="true"><use href="#icon-alert"></use></svg>
+        <p>Quando você pesquisa um produto e, pouco depois, começa a receber anúncios semelhantes nas redes sociais, há sistemas de IA analisando seu comportamento para personalizar essas recomendações.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO A IA FUNCIONA -->
+  <section class="section" id="como-funciona" aria-labelledby="titulo-como-funciona">
+    <div class="container">
+      <p class="section-tag">Refletir</p>
+      <h2 id="titulo-como-funciona">Como a Inteligência Artificial funciona?</h2>
+      <p class="section-lead">O funcionamento da IA baseia-se na combinação de algoritmos, modelos matemáticos e grandes quantidades de dados.</p>
+
+      <div class="flow-diagram" role="img" aria-label="Fluxo: dados, depois algoritmos, depois identificação de padrões, depois resultado">
+        <div class="flow-step">
+          <svg aria-hidden="true"><use href="#icon-data"></use></svg>
+          <span>Dados</span>
+        </div>
+        <svg class="flow-arrow" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <div class="flow-step">
+          <svg aria-hidden="true"><use href="#icon-gear"></use></svg>
+          <span>Algoritmos</span>
+        </div>
+        <svg class="flow-arrow" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <div class="flow-step">
+          <svg aria-hidden="true"><use href="#icon-network"></use></svg>
+          <span>Padrões</span>
+        </div>
+        <svg class="flow-arrow" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+        <div class="flow-step">
+          <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+          <span>Resultado</span>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <h3>Exemplo: aprender a reconhecer gatos</h3>
+        <p>Para uma IA aprender a reconhecer gatos em fotografias, ela precisa analisar milhares de imagens com e sem gatos. Depois de várias etapas de treinamento, o sistema identifica características comuns — como formato das orelhas, olhos e pelos — e passa a classificar novas imagens com boa precisão.</p>
+        <p>É parecido com ensinar uma criança a reconhecer um cachorro mostrando várias fotos: aos poucos, ela percebe os padrões. A IA faz algo semelhante, mas analisando muito mais exemplos usando cálculos matemáticos.</p>
+      </div>
+
+      <div class="callout callout-warning">
+        <svg aria-hidden="true"><use href="#icon-alert"></use></svg>
+        <p><strong>A IA não pensa como uma pessoa.</strong> Ela não possui consciência: realiza cálculos matemáticos complexos para identificar padrões e gerar respostas com base nos dados usados em seu treinamento.</p>
+      </div>
+
+      <p class="section-note">As Redes Neurais Artificiais, inspiradas no funcionamento dos neurônios do cérebro humano, são a base das tecnologias modernas de Deep Learning, usadas em reconhecimento de voz, tradução automática, geração de imagens e sistemas de recomendação.</p>
+    </div>
+  </section>
+
+  <!-- IA GENERATIVA -->
+  <section class="section section-alt" id="generativa" aria-labelledby="titulo-generativa">
+    <div class="container">
+      <p class="section-tag">Refletir</p>
+      <h2 id="titulo-generativa">IA Generativa</h2>
+      <p class="section-lead">Diferente de sistemas que apenas classificam ou analisam dados, a IA Generativa consegue <strong>criar conteúdos novos</strong>. Ferramentas como ChatGPT, Gemini e Copilot tornaram esse tipo de tecnologia acessível a um público amplo.</p>
+
+      <div class="grid grid-3 generative-grid">
+        <div class="mini-card"><svg aria-hidden="true"><use href="#icon-pen"></use></svg><span>Textos</span></div>
+        <div class="mini-card"><svg aria-hidden="true"><use href="#icon-image"></use></svg><span>Imagens</span></div>
+        <div class="mini-card"><svg aria-hidden="true"><use href="#icon-music"></use></svg><span>Músicas</span></div>
+        <div class="mini-card"><svg aria-hidden="true"><use href="#icon-video"></use></svg><span>Vídeos</span></div>
+        <div class="mini-card"><svg aria-hidden="true"><use href="#icon-code"></use></svg><span>Códigos</span></div>
+        <div class="mini-card"><svg aria-hidden="true"><use href="#icon-translate"></use></svg><span>Traduções</span></div>
+      </div>
+
+      <div class="callout callout-warning callout-featured">
+        <svg aria-hidden="true"><use href="#icon-alert"></use></svg>
+        <div>
+          <p class="callout-title">"Uma resposta convincente não é necessariamente uma resposta verdadeira."</p>
+          <p>Ferramentas de IA Generativa podem produzir informações incorretas ou inexistentes — mesmo apresentando a resposta de forma muito convincente. Esse fenômeno é chamado de <strong>alucinação da IA</strong> e reforça a importância de verificar sempre as respostas geradas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="section" id="beneficios" aria-labelledby="titulo-beneficios">
+    <div class="container">
+      <p class="section-tag">Descobrir</p>
+      <h2 id="titulo-beneficios">Benefícios em diferentes áreas</h2>
+      <p class="section-lead">A IA está presente em praticamente todos os setores da sociedade, promovendo inovação e melhorando a tomada de decisões.</p>
+
+      <div class="grid grid-3 benefit-grid">
+        <div class="benefit-card">
+          <svg aria-hidden="true"><use href="#icon-health"></use></svg>
+          <h3>Saúde</h3>
+          <p>Auxilia na análise de exames, identificação precoce de doenças e monitoramento de pacientes.</p>
+        </div>
+        <div class="benefit-card">
+          <svg aria-hidden="true"><use href="#icon-book"></use></svg>
+          <h3>Educação</h3>
+          <p>Personaliza o ensino, oferece correções automáticas e apoia estudantes na aprendizagem.</p>
+        </div>
+        <div class="benefit-card">
+          <svg aria-hidden="true"><use href="#icon-factory"></use></svg>
+          <h3>Indústria</h3>
+          <p>Otimiza processos produtivos, realiza manutenção preditiva e reduz desperdícios.</p>
+        </div>
+        <div class="benefit-card">
+          <svg aria-hidden="true"><use href="#icon-chat"></use></svg>
+          <h3>Comércio</h3>
+          <p>Recomenda produtos, melhora o atendimento com chatbots e apoia estratégias de marketing.</p>
+        </div>
+        <div class="benefit-card">
+          <svg aria-hidden="true"><use href="#icon-bank"></use></svg>
+          <h3>Setor financeiro</h3>
+          <p>Detecta movimentações suspeitas, combate fraudes e realiza análises de crédito.</p>
+        </div>
+        <div class="benefit-card">
+          <svg aria-hidden="true"><use href="#icon-code"></use></svg>
+          <h3>Engenharia de Software</h3>
+          <p>Apoia o desenvolvimento de sistemas, gera códigos e identifica vulnerabilidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RISCOS -->
+  <section class="section section-dark" id="riscos" aria-labelledby="titulo-riscos">
+    <div class="container">
+      <p class="section-tag section-tag-light">Refletir</p>
+      <h2 id="titulo-riscos">Riscos que precisamos conhecer</h2>
+      <p class="section-lead section-lead-light">A IA traz benefícios reais, mas também apresenta desafios que exigem atenção. Conhecer esses riscos é o primeiro passo para se proteger.</p>
+
+      <div class="grid grid-2 risk-grid">
+        <article class="risk-card">
+          <svg aria-hidden="true"><use href="#icon-chat"></use></svg>
+          <h3>Fake news</h3>
+          <p>Ferramentas de IA conseguem produzir textos, imagens e vídeos extremamente realistas, o que dificulta identificar conteúdos falsos antes que se espalhem.</p>
+        </article>
+        <article class="risk-card">
+          <svg aria-hidden="true"><use href="#icon-video"></use></svg>
+          <h3>Deepfakes</h3>
+          <p>Vídeos ou áudios manipulados digitalmente podem simular pessoas reais dizendo ou fazendo algo que nunca aconteceu, sendo usados em fraudes e desinformação.</p>
+        </article>
+        <article class="risk-card">
+          <svg aria-hidden="true"><use href="#icon-lock"></use></svg>
+          <h3>Privacidade</h3>
+          <p>Muitos sistemas dependem da coleta de dados dos usuários. Sem transparência e proteção adequadas, há risco de violação da privacidade e descumprimento da LGPD.</p>
+        </article>
+        <article class="risk-card">
+          <svg aria-hidden="true"><use href="#icon-balance"></use></svg>
+          <h3>Vieses algorítmicos</h3>
+          <p>Como aprendem com dados históricos, os modelos podem reproduzir preconceitos existentes nesses dados, gerando decisões injustas ou discriminatórias.</p>
+        </article>
+      </div>
+
+      <div class="alert-box" id="dadosPessoaisAlert">
+        <svg aria-hidden="true"><use href="#icon-alert"></use></svg>
+        <div>
+          <h3>Pense antes de compartilhar.</h3>
+          <p>Antes de inserir informações em uma ferramenta de IA, avalie se ela é realmente necessária. Evite compartilhar:</p>
+          <ul class="alert-list">
+            <li>CPF</li>
+            <li>Senhas</li>
+            <li>Dados bancários</li>
+            <li>Prontuários médicos</li>
+            <li>Contratos ou documentos sigilosos</li>
+            <li>Informações profissionais confidenciais</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOCÊ FARIA ISSO? -->
+  <section class="section section-dark" id="voce-faria-isso" aria-labelledby="titulo-vfi">
+    <div class="container">
+      <h2 id="titulo-vfi">Você faria isso?</h2>
+      <p class="section-lead section-lead-light">Duas situações rápidas do dia a dia. Escolha uma resposta e veja o que vale considerar antes de agir.</p>
+
+      <div class="scenario-list">
+        <div class="scenario-card" data-scenario="1">
+          <p class="scenario-question">Você precisa revisar um contrato confidencial do trabalho. Você enviaria o documento inteiro para uma ferramenta pública de IA?</p>
+          <div class="scenario-options" role="group" aria-label="Opções de resposta">
+            <button type="button" class="btn btn-option" data-answer="sim">Sim</button>
+            <button type="button" class="btn btn-option" data-answer="nao">Não</button>
+          </div>
+          <div class="scenario-feedback" hidden role="status">
+            <p>A opção mais segura é <strong>não compartilhar</strong> conteúdos confidenciais sem conhecer as políticas de privacidade e tratamento de dados da ferramenta. Documentos sigilosos podem ser armazenados ou processados de formas que você não controla.</p>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenario="2">
+          <p class="scenario-question">Uma IA respondeu a uma pergunta com muita confiança. Você compartilharia imediatamente a informação sem verificar?</p>
+          <div class="scenario-options" role="group" aria-label="Opções de resposta">
+            <button type="button" class="btn btn-option" data-answer="sim">Sim</button>
+            <button type="button" class="btn btn-option" data-answer="nao">Não</button>
+          </div>
+          <div class="scenario-feedback" hidden role="status">
+            <p>Respostas convincentes nem sempre são verdadeiras. É importante <strong>verificar a informação em fontes confiáveis</strong> — como instituições governamentais, universidades ou organizações reconhecidas — antes de compartilhá-la.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTICA -->
+  <section class="section" id="etica" aria-labelledby="titulo-etica">
+    <div class="container">
+      <p class="section-tag">Refletir</p>
+      <h2 id="titulo-etica">Ética no uso da Inteligência Artificial</h2>
+      <p class="section-lead">O avanço da IA torna essencial discutir princípios que orientem seu desenvolvimento e utilização.</p>
+
+      <div class="grid grid-3 ethics-grid">
+        <div class="ethics-card">
+          <svg aria-hidden="true"><use href="#icon-eye"></use></svg>
+          <h3>Transparência</h3>
+          <p>As pessoas devem compreender quando estão interagindo com sistemas de IA e, sempre que possível, conhecer os critérios usados nos resultados.</p>
+        </div>
+        <div class="ethics-card">
+          <svg aria-hidden="true"><use href="#icon-shield"></use></svg>
+          <h3>Responsabilidade</h3>
+          <p>Empresas e desenvolvedores continuam responsáveis pelas decisões tomadas com apoio da IA — a tecnologia não assume essa responsabilidade.</p>
+        </div>
+        <div class="ethics-card">
+          <svg aria-hidden="true"><use href="#icon-lock"></use></svg>
+          <h3>Privacidade</h3>
+          <p>Sistemas devem respeitar a legislação vigente e garantir que os dados dos usuários sejam tratados de forma segura e consentida.</p>
+        </div>
+        <div class="ethics-card">
+          <svg aria-hidden="true"><use href="#icon-scales"></use></svg>
+          <h3>Equidade</h3>
+          <p>É preciso minimizar vieses discriminatórios relacionados a gênero, raça, idade ou qualquer outra característica pessoal.</p>
+        </div>
+        <div class="ethics-card">
+          <svg aria-hidden="true"><use href="#icon-pen"></use></svg>
+          <h3>Autoria</h3>
+          <p>No uso acadêmico, é preciso preservar a autoria intelectual, verificar informações geradas e evitar plágio.</p>
+        </div>
+        <div class="ethics-card">
+          <svg aria-hidden="true"><use href="#icon-brain"></use></svg>
+          <h3>Julgamento humano</h3>
+          <p>A IA não substitui o julgamento humano — seu maior potencial é ampliar as capacidades das pessoas.</p>
+        </div>
+      </div>
+
+      <div class="callout callout-accent">
+        <svg aria-hidden="true"><use href="#icon-alert"></use></svg>
+        <p>Utilizar uma ferramenta de IA <strong>não transfere automaticamente</strong> a responsabilidade de uma decisão para a tecnologia. A responsabilidade final continua sendo das pessoas envolvidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- USO CONSCIENTE -->
+  <section class="section section-alt" id="uso-consciente" aria-labelledby="titulo-uso-consciente">
+    <div class="container">
+      <p class="section-tag">Agir</p>
+      <h2 id="titulo-uso-consciente">Uso consciente e seguro</h2>
+      <p class="section-lead">Uma síntese prática de tudo que vimos até aqui. Marque os itens conforme for revisando — nada é salvo ou enviado.</p>
+
+      <ul class="checklist" id="checklist">
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Verificar as informações antes de aceitá-las como corretas.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Confirmar fontes confiáveis, como instituições reconhecidas.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Não compartilhar dados pessoais ou sigilosos.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Utilizar a IA como ferramenta de apoio, não substituta.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Desenvolver pensamento crítico diante das respostas.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Respeitar autoria e direitos autorais.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Utilizar ferramentas confiáveis e reconhecidas.</span>
+          </button>
+        </li>
+        <li class="checklist-item">
+          <button type="button" class="checklist-btn" aria-pressed="false">
+            <span class="check-box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span>Manter-se atualizado sobre a evolução da tecnologia.</span>
+          </button>
+        </li>
+      </ul>
+
+      <p class="section-conclusion">A Inteligência Artificial é uma ferramenta extremamente poderosa. No entanto, seus benefícios dependem, sobretudo, da forma como cada pessoa escolhe utilizá-la.</p>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="section quiz-section" id="quiz" aria-labelledby="titulo-quiz">
+    <div class="container">
+      <p class="section-tag">Agir</p>
+      <h2 id="titulo-quiz">Será que você está preparado para usar IA com segurança?</h2>
+      <p class="section-lead">Um quiz rápido com 6 perguntas para revisar o que vimos. Cada resposta vem com uma explicação — o objetivo é aprender, não tirar nota.</p>
+
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-progress" aria-hidden="true">
+          <div class="quiz-progress-bar" id="quizProgressBar"></div>
+        </div>
+        <p class="quiz-status" id="quizStatus">Pergunta 1 de 6</p>
+
+        <div id="quizQuestion"></div>
+
+        <div class="quiz-nav">
+          <button type="button" class="btn btn-primary" id="quizNextBtn" disabled>Próxima pergunta</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult" hidden>
+        <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+        <p class="quiz-score" id="quizScore"></p>
+        <p class="quiz-message" id="quizMessage"></p>
+        <button type="button" class="btn btn-primary" id="quizRestartBtn">
+          <svg aria-hidden="true"><use href="#icon-refresh"></use></svg>
+          Refazer quiz
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACK -->
+  <section class="section section-alt" id="feedback" aria-labelledby="titulo-feedback">
+    <div class="container feedback-container">
+      <h2 id="titulo-feedback">Sua opinião também faz parte deste projeto.</h2>
+      <p class="section-lead">Esta página integra uma atividade extensionista do curso de Engenharia de Software. Seu feedback ajuda a entender se o conteúdo contribuiu para ampliar o conhecimento sobre o uso consciente e seguro da Inteligência Artificial.</p>
+      <a
+        href="#INSERIR_LINK_GOOGLE_FORMS"
+        class="btn btn-primary btn-large"
+        id="feedbackLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Substituir por GOOGLE_FORMS_URL antes da publicação">
+        Responder formulário de feedback
+      </a>
+      <p class="feedback-note">Formulário externo, disponibilizado via Google Forms.</p>
+    </div>
+  </section>
+
+  <!-- FONTES -->
+  <section class="section section-sources" id="fontes" aria-labelledby="titulo-fontes">
+    <div class="container">
+      <h2 id="titulo-fontes">Fontes e referências</h2>
+      <ol class="sources-list">
+        <li>BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Diário Oficial da União: Brasília, DF, 15 ago. 2018.</li>
+        <li>RUSSELL, Stuart; NORVIG, Peter. Inteligência Artificial: uma abordagem moderna. 4. ed. São Paulo: Pearson, 2022.</li>
+        <li>TURING, Alan M. Computing Machinery and Intelligence. Mind, Oxford, v. 59, n. 236, p. 433-460, 1950.</li>
+        <li>UNESCO. Recommendation on the Ethics of Artificial Intelligence. Paris: UNESCO, 2021.</li>
+        <li>OECD. OECD AI Principles. Paris: Organisation for Economic Co-operation and Development, 2019.</li>
+        <li>IBM. What is Artificial Intelligence (AI)?</li>
+        <li>MICROSOFT. Responsible AI.</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Projeto de Extensão — Engenharia de Software</p>
+    <p>"Desmistificando a Inteligência Artificial: Uso Consciente e Seguro na Sociedade Digital"</p>
+    <p>Acadêmica: Juliana Nunes da Silva</p>
+    <p>Instituição: Unicesumar</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
